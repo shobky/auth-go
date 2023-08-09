@@ -1,7 +1,7 @@
 # Authentication with go-gin
 Example applications built with golang and gin web freamework. Using postgresql as a DB and GORM for an orm.
 
-## TODO
+## Setup TODO
 * get the packages
   ```b
   go get .
