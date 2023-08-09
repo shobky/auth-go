@@ -3,12 +3,12 @@ Example applications built with golang and gin web freamework. Using postgresql 
 
 ## TODO
 * get the packages
-  ```
+  ```b
   go get .
   ```
 * add the .env file and populate it with the variables from .env.example.txt
 * have a database running on port 5433, You can edit this to use you custom postgres db and edit values in .env file
-  ```
+  ```g
 	host := "localhost"
 	port := os.Getenv("DB_PORT")
 	dbName := "postgres"
@@ -24,7 +24,7 @@ Example applications built with golang and gin web freamework. Using postgresql 
   ```
   - For database I used postgres15-alpine docker image and ran it on port 5433
   - If you want to change the Database provider remember to import the right gorm/driver/*
-    ```
+    ```g
     package initializers
 
     import (
