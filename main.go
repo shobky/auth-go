@@ -23,6 +23,7 @@ func main() {
 	app.Post("/signup", handlers.Signup)
 	app.Post("/login", handlers.Login)
 	app.Get("/validate", middleware.RequireAuth, handlers.Validate)
+	app.Post("/refresh", handlers.RefreshToken)
 
 	app.Listen(":3000")
 }

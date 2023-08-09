@@ -14,7 +14,7 @@ import (
 
 func RequireAuth(c *fiber.Ctx) error {
 	// Get the cookie
-	tokenString := c.Cookies("Authentication")
+	tokenString := c.Cookies("AccessToken")
 	if tokenString == "" {
 		return c.Status(http.StatusUnauthorized).SendString("Unauthorized")
 	}
