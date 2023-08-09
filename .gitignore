@@ -1,0 +1,35 @@
+# Compiled binary files
+*.exe
+*.exe~
+
+# Environment files
+.env
+*.env
+
+
+# IDE and editor files
+.vscode/
+
+# Compiled object files
+*.o
+*.a
+
+# Output directories
+/_obj/
+/_test/
+/_testmain.go
+/_testmain.go
+/_testmain.go
+/main
+/_test
+/bin/
+/pkg/
+/release/
+
+# Dependency directories
+/vendor/
+/go.sum
+/Godeps/
+/.gogradle/
+
+
