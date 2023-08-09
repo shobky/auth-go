@@ -3,6 +3,7 @@ package initializers
 import (
 	"fmt"
 	"log"
+	"os"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -13,10 +14,10 @@ var DB *gorm.DB
 func DbConnect() {
 	var err error
 	host := "localhost"
-	port := "5433"
+	port := os.Getenv("DB_PORT")
 	dbName := "postgres"
 	dbUser := "root"
-	password := "password"
+	password := string(os.Getenv("DB_PASSWORD"))
 	dsn := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable",
 		host,
 		port,
