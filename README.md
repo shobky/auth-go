@@ -1,7 +1,7 @@
 # Authentication with go-gin
 Example applications built with golang and gin web freamework. Using postgresql as a DB and GORM for an orm.
 
-See the gofiber branch for the more secure authentication built with fiber and uses refresh tokens.
+See the [gofiber](https://github.com/shobky/auth-go/blob/gofiber/README.md) branch for the more secure authentication built with fiber and uses refresh tokens.
 
 ## Setup TODO
 * get the packages
